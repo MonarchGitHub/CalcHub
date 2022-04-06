@@ -15,16 +15,33 @@
         <h2>Daily Water Intake Calculator</h2>
     </div>
     <div class="component_grid">
-        <div class="form">
-            <form action="/action_page.php">
-                <label for="fname">First name:</label><br>
-                <input type="text" id="fname" name="fname" value="John"><br>
-                <label for="lname">Last name:</label><br>
-                <input type="text" id="lname" name="lname" value="Doe"><br><br>
-                <input type="submit" value="Submit">
-            </form>
+        <div class="calculator_section">
+            <div class="form">
+                <form action="/action_page.php">
+                    <label for="Age">Age</label><br>
+                    <input type="text" id="Age" name="Age" value="Enter your age"><br>
+                    <label for="Activity">Amount of Activity</label><br>
+                    <input type="text" id="lname" name="lname" value="Choose the activity"><br>
+                    <label for="Humidity">Humidity</label><br>
+                    <input type="text" id="Humidity" name="Humidity" value="Choose the Humidity"><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+                <div class="dropdown">
+                    <h4>Select Your Activity</h4>
+                    <select name="Activity">
+                        <option value="Minimal">Minimal</option>
+                        <option value="Sedentary">Sedentary</option>
+                        <option value="Average">Average</option>
+                        <option value="Often">Often</option>
+                        <option value="Extreme">Extreme</option>
+                    </select>
+                </div>
+            </div>
         </div>
-        <div class="result"></div>
+
+        <div class="result_section">
+            <h3>Results-Section</h3>
+        </div>
     </div>
     <script src="calc.js"></script>
 </body>
